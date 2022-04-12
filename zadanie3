@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int I;
+    cout<< "Enter binary number:\n";
+    cin >> I;
+    int J, K, M;
+    J = 0;
+    K = 0;
+    M = 1;
+    while(I>0){
+        J = I % 10;
+        K = K + J * M;
+        M = M * 2;
+        I = I / 10;
+    }
+   cout << K << endl;
+    return 0;
+}

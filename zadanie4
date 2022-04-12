@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int A;
+    cin >> A;
+
+    int I = 1, bin = 0;
+    while(A > 0) {
+        bin += (A % 2) * I;
+        A = A / 2;
+        I *= 10;
+    }
+
+    cout << bin;
+}
+//до 1023 включительно :)
